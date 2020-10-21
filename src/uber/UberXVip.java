@@ -2,8 +2,8 @@ package uber;
 
 public class UberXVip extends UberX{
 	
-	public UberXVip(double kmCorrida) {
-		super(kmCorrida);
+	public UberXVip(double km) {
+		super(km);
 	}
 
 	@Override

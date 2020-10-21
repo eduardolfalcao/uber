@@ -5,30 +5,30 @@ import java.util.List;
 
 public class SistemaUber {
 	
-	private List<Carona> caronas;
+	private List<Corrida> corridas;
 	
 	public SistemaUber() {
-		this.caronas = new ArrayList<Carona>();
+		this.corridas = new ArrayList<Corrida>();
 	}
 	
-	public void addCarona(Carona carona) {
-		this.caronas.add(carona);
+	public void addCorrida(Corrida corrida) {
+		this.corridas.add(corrida);
 	}
 	
-	public double getValorCaronas() {
+	public double getValorCorridas() {
 		double valorTotal = 0;
-		for(Carona carona: caronas)
-			valorTotal += carona.getValor();
+		for(Corrida corrida: corridas)
+			valorTotal += corrida.getValor();
 		return valorTotal;
 	}
 	
 	public static void main(String[] args) {
 		SistemaUber uber = new SistemaUber();
-		uber.addCarona(new UberX(5));
-		uber.addCarona(new UberBlack(8));
-		uber.addCarona(new UberXVip(3.4));	
+		uber.addCorrida(new UberX(5));
+		uber.addCorrida(new UberBlack(8));
+		uber.addCorrida(new UberXVip(3.4));	
 		
-		System.out.println("Valor total: "+uber.getValorCaronas());
+		System.out.println("Valor total: "+uber.getValorCorridas());
 	}
 
 }

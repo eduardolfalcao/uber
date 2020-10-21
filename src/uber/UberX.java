@@ -1,14 +1,14 @@
 package uber;
 
-public class UberX extends Carona {
+public class UberX extends Corrida {
 
-	public UberX(double kmCorrida) {
-		super(kmCorrida, 4, 1.2);
+	public UberX(double km) {
+		super(km, 4, 1.2);
 	}
 
 	@Override
 	public double getValor() {
-		return super.precoBase + super.kmCorrida * super.precoKm;
+		return super.precoBase + super.km * super.precoKm;
 	}
 
 }

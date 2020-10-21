@@ -1,13 +1,13 @@
 package uber;
 
-public abstract class Carona {
+public abstract class Corrida {
 	
-	protected double kmCorrida;
+	protected double km;
 	protected double precoBase;
 	protected double precoKm;
 	
-	public Carona(double kmCorrida, double precoBase, double precoKm) {
-		this.kmCorrida = kmCorrida;
+	public Corrida(double km, double precoBase, double precoKm) {
+		this.km = km;
 		this.precoBase = precoBase;
 		this.precoKm = precoKm;
 	}

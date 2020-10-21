@@ -2,8 +2,8 @@ package uber;
 
 public class UberBlack extends UberX{
 	
-	public UberBlack(double kmCorrida) {
-		super(kmCorrida);
+	public UberBlack(double km) {
+		super(km);
 	}
 
 	@Override
